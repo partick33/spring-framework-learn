@@ -3,6 +3,12 @@ pluginManagement {
 		mavenCentral()
 		gradlePluginPortal()
 		maven { url "https://repo.spring.io/release" }
+		// aliyun镜像
+		maven { url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+		// Maven的中央仓库
+		mavenCentral()
+		// Spring Maven 仓库
+		maven { url "https://repo.spring.io/libs-spring-framework-build" }
 	}
 }
 
@@ -55,3 +61,5 @@ settings.gradle.projectsLoaded {
 		}
 	}
 }
+include 'spring-source-test'
+
